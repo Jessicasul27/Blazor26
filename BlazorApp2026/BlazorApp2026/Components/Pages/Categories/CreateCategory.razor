@@ -1,0 +1,49 @@
+﻿@page "/categories/create"
+@using Blazor26.Models.Models
+@using Blazor26.Services
+@using Blazor26.Models
+@inject NavigationManager _navigationManager;
+@inject IUnitOfWork _unitOfWork;
+@rendermode InteractiveServer
+
+<div class="row my-2">
+	<h3 class="card-title text-primary mb-3 ml-3"> Create Category</h3>
+</div>
+<div class="col-10">
+
+	<EditForm Model="Category" FormName="CreateCategoryForm" OnValidSubmit="Create">
+		<DataAnnotationsValidator />
+		<ValidationSummary />
+		
+		<div class="form-group">
+			<label>Name</label>
+			<InputText id="Name"  @bind-Value="Category.Name" class="form-control"> </InputText>
+		</div>
+		
+		<div class="form-group py-2">
+			<button class="btn btn-primary" type="submit">Create</button>
+			<NavLink href="categories" class="btn btn-secondary"> Back to Index</NavLink>
+		</div>
+
+	</EditForm> 
+</div>
+
+
+
+
+@code {
+
+	private Category Category { get; set; } = new Category();
+
+	private void Create()
+	{
+		_unitOfWork.CategoryRepo.Add(Category);
+		_unitOfWork.Save();
+		_navigationManager.NavigateTo("/categories");
+	}
+}
+
+
+
+
+

@@ -1,0 +1,60 @@
+﻿@page "/categories/edit/{id:int}"
+@using Blazor26.Models.Models
+@inject NavigationManager _navigationManager;
+@inject IUnitOfWork _unitOfWork;
+@rendermode InteractiveServer
+
+<div class="row my-2">
+	<h3 class="card-title text-primary mb-3 ml-3"> Edit Category</h3>
+</div>
+<div class="col-10">
+
+	<EditForm Model="Category" FormName="EditCategoryForm" OnValidSubmit="EditCategoryRec">
+		<DataAnnotationsValidator />
+		<ValidationSummary />
+		<div class="form-group">
+			<label>Name</label>
+			<InputText id="Name"  @bind-Value="Category.Name"> </InputText>
+		</div>
+		<div class="form-group py-2">
+			<button class="btn btn-primary" type="submit">Update</button>
+			<NavLink href="categories" class="btn btn-secondary"> Back to Index</NavLink>
+		</div>
+
+	</EditForm> 
+</div>
+
+
+
+
+@code {
+
+	private Category Category { get; set; } = new Category();
+	[Parameter]
+    public int Id { get; set; }
+
+    private bool isLoading { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Run(LoadCategory);
+        
+    }
+    private void LoadCategory()
+    {
+        Category = _unitOfWork.CategoryRepo.Get(Id);
+
+        isLoading = false;
+    }
+	private void EditCategoryRec()
+	{
+		_unitOfWork.CategoryRepo.Update(Category);
+		_unitOfWork.Save();
+		_navigationManager.NavigateTo("/categories");
+	}
+}
+
+
+
+
+

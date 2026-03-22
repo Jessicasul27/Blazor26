@@ -1,0 +1,80 @@
+﻿@page "/categories"
+@using Blazor26.Models.Models
+@inject IUnitOfWork _unitOfWork
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">Category List</h4>
+
+    </div>
+    <div class="col-4 offset-2">
+        <a href="categories/create" class="btn btn-info form-control"> Add new Categories</a>
+    </div>
+
+</div>
+@* <SfGrid DataSource="@listOfCategories" /> *@
+
+<div class="col-12 p-3">
+    @if (listOfCategories.Any())
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var cat in listOfCategories)
+                {
+                    <tr>
+                        <td>
+                            @cat.Name
+                        </td>
+                        <td>
+                            <NavLink href="@($"categories/edit/{cat.Id}")" class="btn btn-primary">Edit</NavLink>
+
+                        </td>
+                        <td>
+                            <NavLink href="@($"categories/delete/{cat.Id}")" class="btn btn-primary">Delete</NavLink>
+                        </td>
+
+                      
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        if (isLoading)
+        {
+            <div class="text-center">
+                <img src="Images/Loading.gif" alt="loading" />
+            </div>
+        }
+        else
+        {
+            <p class="text-danger">No Categories found</p>
+        }
+      
+    }
+</div>
+
+@code{
+    private IEnumerable<Category> listOfCategories { get; set; } = new List<Category>();
+    private bool isLoading { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Run(LoadCategories);
+       
+    }
+
+    private void LoadCategories()
+    {
+        listOfCategories = _unitOfWork.CategoryRepo.GetAll();
+        isLoading = false;
+    }
+
+}

@@ -1,0 +1,80 @@
+﻿@page "/products"
+@using Blazor26.Models.Models
+@inject IUnitOfWork _unitOfWork
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-info">Product List</h4>
+
+    </div>
+    <div class="col-4 offset-2">
+        <a href="products/create" class="btn btn-info form-control"> Add new Products</a>
+    </div>
+
+</div>
+
+
+<div class="col-12 p-3">
+    @if (listOfProducts.Any())
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var prod in listOfProducts)
+                {
+                    <tr>
+                        <td>
+                            @prod.Name
+                        </td>
+                        <td>
+                            <NavLink href="@($"products/edit/{prod.ID}")" class="btn btn-primary">Edit</NavLink>
+
+                        </td>
+                        <td>
+                            <NavLink href="@($"products/delete/{prod.ID}")" class="btn btn-primary">Delete</NavLink>
+                        </td>
+
+                      
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        if (isLoading)
+        {
+            <div class="text-center">
+                <img src="Images/Loading.gif" alt="loading" />
+            </div>
+        }
+        else
+        {
+            <p class="text-danger">No Products found</p>
+        }
+      
+    }
+</div>
+
+@code{
+    private IEnumerable<Product> listOfProducts { get; set; } = new List<Product>();
+    private bool isLoading { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Run(LoadProducts);
+       
+    }
+
+    private void LoadProducts()
+    {
+        listOfProducts = _unitOfWork.ProductRepo.GetAll();
+        isLoading = false;
+    }
+
+}

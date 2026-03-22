@@ -1,0 +1,95 @@
+﻿@page "/products/delete/{id:int}"
+@inject NavigationManager _navigationManager;
+@using Blazor26.Models.Models
+@inject IUnitOfWork _unitOfWork;
+@inject IFileMgt _fileMgt;
+
+@rendermode InteractiveServer
+
+<div class="row my-2">
+	<h3 class="card-title text-primary mb-3 ml-3"> Delete Product</h3>
+
+	<div class="col-10">
+
+		<EditForm Model="Product"  FormName="DeleteProductForm"  OnValidSubmit="Delete">
+			<DataAnnotationsValidator />
+			<ValidationSummary />
+			<div class="form-group">
+				<label>Name</label>
+				<InputText id="Name" @bind-Value="Product.Name" class="form-control"> </InputText>
+				<ValidationMessage For="() => Product.Name" />
+			</div> 
+
+			<div class="form-group">
+				<label>Description</label>
+				<InputText id="Description" @bind-Value="Product.description" class="form-control"> </InputText>
+
+			</div>
+			<div class="form-group">
+				<label>Price</label>
+				<InputNumber id="Price" @bind-Value="Product.Price" class="form-control"> </InputNumber>
+
+			</div>
+			<div class="form-group">
+				<label>Category</label>
+				<InputSelect id="CategoryID" @bind-Value="Product.CategoryID" class="form-control">
+					<option value=0 disabled="disabled" > -----Select Category</option>
+					@foreach (var cat in listOfCategories)
+					{
+						<option value="@cat.Id">@cat.Name</option>
+					}
+				</InputSelect>
+				<ValidationMessage For="() => Product.CategoryID" />
+			</div>
+			
+
+
+			<div class="form-group py-2">
+				<button class="btn btn-danger" type="submit">Delete</button>
+				<NavLink href="products" class="btn btn-secondary"> Back to Index</NavLink>
+			</div> 
+
+		</EditForm> 
+	</div>
+
+	<div class="col-md-2">
+		<img src="@Product.Image" class="w-100"/>
+	</div>
+</div>
+
+
+
+@code {
+	[Parameter]
+	public int id { get; set; }
+
+	private Product Product { get; set; } = new Product();
+
+
+	private IEnumerable<Category> listOfCategories = new List<Category>();
+
+	protected override async Task OnInitializedAsync()
+	{
+		await Task.Run(LoadCategories);
+	}
+
+	private void LoadCategories()
+	{
+        Product = _unitOfWork.ProductRepo.Get(id);
+		listOfCategories = _unitOfWork.CategoryRepo.GetAll();
+	}
+
+	private void Delete()
+	{
+		_unitOfWork.ProductRepo.Delete(Product);
+		_unitOfWork.Save();
+		_navigationManager.NavigateTo("/products");
+	}
+
+	
+}
+
+
+
+
+

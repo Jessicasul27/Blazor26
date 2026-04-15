@@ -69,6 +69,7 @@ C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\BDA 2024\Git & Git Actions\Blazor
 C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\BDA 2024\Git & Git Actions\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.pdb
 C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\BDA 2024\Git & Git Actions\Blazor26\Blazor26.Services\obj\Debug\net8.0\ref\Blazor26.Services.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.deps.json
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.runtimeconfig.json
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.pdb
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.DataAccess.dll
@@ -85,6 +86,5 @@ C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Ser
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\obj\Debug\net8.0\refint\Blazor26.Services.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.pdb
-C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\obj\Debug\net8.0\ref\Blazor26.Services.dll
-C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\bin\Debug\net8.0\Blazor26.Services.runtimeconfig.json
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\obj\Debug\net8.0\Blazor26.Services.genruntimeconfig.cache
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Services\obj\Debug\net8.0\ref\Blazor26.Services.dll

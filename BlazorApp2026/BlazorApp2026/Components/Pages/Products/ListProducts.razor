@@ -27,7 +27,7 @@
                         @{
                             var prod = item as Product;
                         }
-                    <NavLink href="@($"/products/edit/{prod?.ID}")" class="btn btn-primary">Edit</NavLink>
+                    <NavLink href="@($"/products/edit/{prod.ID}")" class="btn btn-primary">Edit</NavLink>
                 </Template>
             </GridColumn>
 
@@ -36,7 +36,7 @@
                         @{
                             var prod = item as Product;
                         }
-                    <NavLink href="@($"/products/delete/{prod?.ID}")" class="btn btn-danger">Delete</NavLink>
+                    <NavLink href="@($"/products/delete/{prod.ID}")" class="btn btn-danger">Delete</NavLink>
                 </Template>
             </GridColumn>
         </GridColumns>

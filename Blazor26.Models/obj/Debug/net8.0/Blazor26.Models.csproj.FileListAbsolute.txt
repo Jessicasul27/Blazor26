@@ -49,6 +49,7 @@ C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\BDA 2024\Git & Git Actions\Blazor
 C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\BDA 2024\Git & Git Actions\Blazor26\Blazor26.Models\obj\Debug\net8.0\Blazor26.Models.pdb
 C:\Users\Edwina.Sweeney\OneDrive - Atlantic TU\BDA 2024\Git & Git Actions\Blazor26\Blazor26.Models\obj\Debug\net8.0\ref\Blazor26.Models.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\bin\Debug\net8.0\Blazor26.Models.deps.json
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\bin\Debug\net8.0\Blazor26.Models.runtimeconfig.json
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\bin\Debug\net8.0\Blazor26.Models.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\bin\Debug\net8.0\Blazor26.Models.pdb
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\obj\Debug\net8.0\Blazor26.Models.csproj.AssemblyReference.cache
@@ -60,6 +61,5 @@ C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Mod
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\obj\Debug\net8.0\Blazor26.Models.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\obj\Debug\net8.0\refint\Blazor26.Models.dll
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\obj\Debug\net8.0\Blazor26.Models.pdb
-C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\obj\Debug\net8.0\ref\Blazor26.Models.dll
-C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\bin\Debug\net8.0\Blazor26.Models.runtimeconfig.json
 C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\obj\Debug\net8.0\Blazor26.Models.genruntimeconfig.cache
+C:\Users\JessicaSuleiman-STUD\OneDrive - Atlantic TU\bacon\Blazor26\Blazor26.Models\obj\Debug\net8.0\ref\Blazor26.Models.dll

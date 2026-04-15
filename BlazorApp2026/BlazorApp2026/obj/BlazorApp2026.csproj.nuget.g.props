@@ -7,7 +7,7 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\JessicaSuleiman-STUD\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.12.2</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\JessicaSuleiman-STUD\.nuget\packages\" />
@@ -15,13 +15,13 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.themes\33.1.46\buildTransitive\Syncfusion.Blazor.Themes.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.themes\33.1.46\buildTransitive\Syncfusion.Blazor.Themes.props')" />
-    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.core\33.1.44\buildTransitive\Syncfusion.Blazor.Core.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.core\33.1.44\buildTransitive\Syncfusion.Blazor.Core.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.core\33.1.49\buildTransitive\Syncfusion.Blazor.Core.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.core\33.1.49\buildTransitive\Syncfusion.Blazor.Core.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.spinner\33.1.44\buildTransitive\Syncfusion.Blazor.Spinner.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.spinner\33.1.44\buildTransitive\Syncfusion.Blazor.Spinner.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.buttons\33.1.44\buildTransitive\Syncfusion.Blazor.Buttons.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.buttons\33.1.44\buildTransitive\Syncfusion.Blazor.Buttons.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.popups\33.1.44\buildTransitive\Syncfusion.Blazor.Popups.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.popups\33.1.44\buildTransitive\Syncfusion.Blazor.Popups.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.splitbuttons\33.1.44\buildTransitive\Syncfusion.Blazor.SplitButtons.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.splitbuttons\33.1.44\buildTransitive\Syncfusion.Blazor.SplitButtons.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.notifications\33.1.44\buildTransitive\Syncfusion.Blazor.Notifications.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.notifications\33.1.44\buildTransitive\Syncfusion.Blazor.Notifications.props')" />
-    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.data\33.1.44\buildTransitive\Syncfusion.Blazor.Data.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.data\33.1.44\buildTransitive\Syncfusion.Blazor.Data.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.data\33.1.49\buildTransitive\Syncfusion.Blazor.Data.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.data\33.1.49\buildTransitive\Syncfusion.Blazor.Data.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.lists\33.1.44\buildTransitive\Syncfusion.Blazor.Lists.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.lists\33.1.44\buildTransitive\Syncfusion.Blazor.Lists.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.inputs\33.1.44\buildTransitive\Syncfusion.Blazor.Inputs.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.inputs\33.1.44\buildTransitive\Syncfusion.Blazor.Inputs.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.dropdowns\33.1.44\buildTransitive\Syncfusion.Blazor.DropDowns.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.dropdowns\33.1.44\buildTransitive\Syncfusion.Blazor.DropDowns.props')" />
@@ -29,6 +29,7 @@
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.richtexteditor\33.1.44\buildTransitive\Syncfusion.Blazor.RichTextEditor.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.richtexteditor\33.1.44\buildTransitive\Syncfusion.Blazor.RichTextEditor.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.calendars\33.1.44\buildTransitive\Syncfusion.Blazor.Calendars.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.calendars\33.1.44\buildTransitive\Syncfusion.Blazor.Calendars.props')" />
     <Import Project="$(NuGetPackageRoot)syncfusion.blazor.grid\32.2.7\buildTransitive\Syncfusion.Blazor.Grid.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.grid\32.2.7\buildTransitive\Syncfusion.Blazor.Grid.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.charts\33.1.49\buildTransitive\Syncfusion.Blazor.Charts.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.charts\33.1.49\buildTransitive\Syncfusion.Blazor.Charts.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.14\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.14\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.14\build\net8.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.14\build\net8.0\Microsoft.EntityFrameworkCore.Design.props')" />

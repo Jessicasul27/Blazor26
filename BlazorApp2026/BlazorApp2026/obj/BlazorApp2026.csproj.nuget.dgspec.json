@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -78,6 +79,10 @@
               "target": "Package",
               "version": "[9.0.14, )"
             },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[33.1.49, )"
+            },
             "Syncfusion.Blazor.Grid": {
               "target": "Package",
               "version": "[32.2.7, )"
@@ -103,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -129,6 +134,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -147,7 +153,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -162,6 +168,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.14, )"
+            },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[33.1.49, )"
             },
             "Syncfusion.Blazor.Grid": {
               "target": "Package",
@@ -188,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -214,6 +224,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -236,7 +247,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -255,6 +266,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.14, )"
+            },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[33.1.49, )"
             },
             "Syncfusion.Blazor.Grid": {
               "target": "Package",
@@ -281,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -307,6 +322,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -325,7 +341,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -344,14 +360,18 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.11, )",
+              "version": "[8.0.24, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )",
+              "version": "[9.0.13, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[33.1.49, )"
             },
             "Syncfusion.Blazor.Grid": {
               "target": "Package",
@@ -376,7 +396,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.11, 8.0.11]"
+              "version": "[8.0.24, 8.0.24]"
             }
           ],
           "frameworkReferences": {
@@ -384,7 +404,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -415,6 +435,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -443,7 +464,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -466,6 +487,10 @@
             "Syncfusion.Blazor.Calendars": {
               "target": "Package",
               "version": "[33.1.44, )"
+            },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[33.1.49, )"
             },
             "Syncfusion.Blazor.Grid": {
               "target": "Package",
@@ -499,7 +524,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -19,6 +19,7 @@ namespace BlazorApp2026
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents()
                 .AddInteractiveWebAssemblyComponents();
+            builder.Services.AddSyncfusionBlazor();
 
             builder.Services.AddSyncfusionBlazor();
             builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"]));

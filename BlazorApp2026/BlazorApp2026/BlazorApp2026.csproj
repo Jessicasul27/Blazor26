@@ -17,6 +17,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Syncfusion.Blazor.Calendars" Version="33.1.44" />
+    <PackageReference Include="Syncfusion.Blazor.Charts" Version="33.1.49" />
     <PackageReference Include="Syncfusion.Blazor.Grid" Version="32.2.7" />
     <PackageReference Include="Syncfusion.Blazor.RichTextEditor" Version="33.1.44" />
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="33.1.46" />

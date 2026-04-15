@@ -36,6 +36,23 @@ namespace Blazor26.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Electronics"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Books"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Clothing"
+                        });
                 });
 
             modelBuilder.Entity("Blazor26.Models.Models.Product", b =>
@@ -67,6 +84,62 @@ namespace Blazor26.DataAccess.Migrations
                     b.HasIndex("CategoryID");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            CategoryID = 1,
+                            Image = "/Images/Products/smartphone.jpg",
+                            Name = "Smartphone",
+                            Price = 699.99f,
+                            description = "High-end smartphone"
+                        },
+                        new
+                        {
+                            ID = 2,
+                            CategoryID = 1,
+                            Image = "/Images/Products/laptop.jpg",
+                            Name = "Laptop",
+                            Price = 1299.99f,
+                            description = "Powerful gaming laptop"
+                        },
+                        new
+                        {
+                            ID = 3,
+                            CategoryID = 2,
+                            Image = "/Images/Products/novel.jpg",
+                            Name = "Novel",
+                            Price = 19.99f,
+                            description = "Interesting fiction novel"
+                        },
+                        new
+                        {
+                            ID = 4,
+                            CategoryID = 2,
+                            Image = "/Images/Products/biography.jpg",
+                            Name = "Biography",
+                            Price = 24.99f,
+                            description = "Famous person's biography"
+                        },
+                        new
+                        {
+                            ID = 5,
+                            CategoryID = 3,
+                            Image = "/Images/Products/tshirt.jpg",
+                            Name = "T-Shirt",
+                            Price = 14.99f,
+                            description = "Cotton t-shirt"
+                        },
+                        new
+                        {
+                            ID = 6,
+                            CategoryID = 3,
+                            Image = "/Images/Products/jeans.jpg",
+                            Name = "Jeans",
+                            Price = 49.99f,
+                            description = "Denim jeans"
+                        });
                 });
 
             modelBuilder.Entity("Blazor26.Models.Models.Sales", b =>
@@ -92,6 +165,50 @@ namespace Blazor26.DataAccess.Migrations
                     b.HasIndex("ProductID");
 
                     b.ToTable("Sales");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            MonthName = "January",
+                            ProductID = 1,
+                            SalesAmount = 10m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            MonthName = "February",
+                            ProductID = 2,
+                            SalesAmount = 5m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            MonthName = "March",
+                            ProductID = 3,
+                            SalesAmount = 9m
+                        },
+                        new
+                        {
+                            Id = 4,
+                            MonthName = "April",
+                            ProductID = 4,
+                            SalesAmount = 5m
+                        },
+                        new
+                        {
+                            Id = 5,
+                            MonthName = "May",
+                            ProductID = 5,
+                            SalesAmount = 8m
+                        },
+                        new
+                        {
+                            Id = 6,
+                            MonthName = "June",
+                            ProductID = 6,
+                            SalesAmount = 16m
+                        });
                 });
 
             modelBuilder.Entity("Blazor26.Models.Models.Product", b =>
